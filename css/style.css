@@ -1,7 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap");
 @font-face {
   font-family: "SinhalaFont";
-  src: url("/fonts/Sinhala.TTF");
+  src: url("../fonts/Sinhala.TTF");
+}
+
+.random {
+  background-color: #2b2b2b;
+  height: 5000px;
+  width: 100%;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2b2b2b;
+  z-index: 9999;
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
 }
 
 html,
@@ -69,14 +97,6 @@ body {
   margin-right: 0;
 }
 
-section[id]:before {
-  display: block;
-  height: 56px; /* equal to the header height */
-  margin-top: -56px; /* negative margin equal to the header height */
-  visibility: hidden;
-  content: "";
-}
-
 .headerfw {
   width: 100%;
   background-image: url(../img/hero.jpg);
@@ -108,12 +128,6 @@ section[id]:before {
   transform: translateX(-50%);
 }
 
-.random {
-  background-color: #2b2b2b;
-  height: 5000px;
-  width: 100%;
-}
-
 .infosection {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -121,7 +135,7 @@ section[id]:before {
 }
 
 .IntroLeft {
-  background-image: url(/img/IntroLeft.png);
+  background-image: url(../img/IntroLeft.png);
   height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -129,7 +143,7 @@ section[id]:before {
 }
 
 .IntroRight {
-  background-image: url(/img/IntroRight.png);
+  background-image: url(../img/IntroRight.png);
   height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -146,7 +160,7 @@ section[id]:before {
 }
 
 .parallax {
-  background-image: url(/img/chilliBG.jpg);
+  background-image: url(../img/chilliBG.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -170,7 +184,7 @@ section[id]:before {
 }
 
 .infotitle {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
@@ -214,8 +228,8 @@ section[id]:before {
 
 .otherpro {
   background-color: #fff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .othertitlepad {
@@ -224,7 +238,7 @@ section[id]:before {
 }
 
 .otherleft {
-  background-image: url(/img/OtherLeft.png);
+  background-image: url(../img/OtherLeft.png);
   height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -232,7 +246,7 @@ section[id]:before {
 }
 
 .otherright {
-  background-image: url(/img/OtherRight.png);
+  background-image: url(../img/OtherRight.png);
   height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -241,6 +255,8 @@ section[id]:before {
 
 .otherlist {
   font-weight: 400;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .otherbotpad {
